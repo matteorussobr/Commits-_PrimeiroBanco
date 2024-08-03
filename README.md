@@ -87,28 +87,28 @@ SELECT * FROM world.country c
 WHERE c.Continent = 'Asia';  <kbd>(**Filtrando para países da Asia apenas.**)</kbd>
 
 <br></br>
-<br></br>
+
 
 SELECT * FROM world.country c
 <br></br>
 WHERE c.Continent IN ('Asia', 'Europe');  <kbd>(**Filtrando para países da Asia e Europa apenas.**)</kbd>
 
 <br></br>
-<br></br>
+
 
 SELECT * FROM world.country c
 <br></br>
 WHERE length(c.Name) <=5;  <kbd>(**Filtrando para buscar todos os nomes que tenham 5 ou menos letras.**)</kbd> 
 
 <br></br>
-<br></br>
+
 
 SELECT * FROM world.country c
 <br></br>
 WHERE c.Name LIKE 'A%';  <kbd>(**Filtrando para trazer tudo que começa com A e não importa oq venha depois, usando o LIKE pra isso.**)</kbd> 
 
 <br></br>
-<br></br>
+
 
 SELECT * FROM world.country c
 <br></br>
