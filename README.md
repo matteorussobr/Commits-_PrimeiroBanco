@@ -84,28 +84,28 @@ LIKE - Quando se deseja fazer uma busca por um caracter.<br></br>
 
 SELECT * FROM world.country c
 <br></br>
-WHERE c.Continent = 'Asia';  <kbd>(**Filtrando para países da Asia apenas.**)</kbd> :speech_balloon:
+WHERE c.Continent = 'Asia';  <kbd>(**Filtrando para países da Asia apenas.**)</kbd>
 
 <br></br>
 <br></br>
 
 SELECT * FROM world.country c
 <br></br>
-WHERE c.Continent IN ('Asia', 'Europe');  <kbd>(**Filtrando para países da Asia e Europa apenas.**)</kbd> :speech_balloon:
+WHERE c.Continent IN ('Asia', 'Europe');  <kbd>(**Filtrando para países da Asia e Europa apenas.**)</kbd>
 
 <br></br>
 <br></br>
 
 SELECT * FROM world.country c
 <br></br>
-WHERE length(c.Name) <=5;  <kbd>(**Filtrando para buscar todos os nomes que tenham 5 ou menos letras.**)</kbd> :speech_balloon:
+WHERE length(c.Name) <=5;  <kbd>(**Filtrando para buscar todos os nomes que tenham 5 ou menos letras.**)</kbd> 
 
 <br></br>
 <br></br>
 
 SELECT * FROM world.country c
 <br></br>
-WHERE c.Name LIKE 'A%';  <kbd>(**Filtrando para trazer tudo que começa com A e não importa oq venha depois, usando o LIKE pra isso.**)</kbd> :speech_balloon:
+WHERE c.Name LIKE 'A%';  <kbd>(**Filtrando para trazer tudo que começa com A e não importa oq venha depois, usando o LIKE pra isso.**)</kbd> 
 
 <br></br>
 <br></br>
@@ -114,7 +114,7 @@ SELECT * FROM world.country c
 <br></br>
 WHERE c.Name LIKE '_a%'; <kbd>(**Filtrando todos os países que tenham a segunda letra com a.&nbsp;
 Pode-se usar quantos _ quiser, ele usa antes para ir pulando as letras até chegar na que precise. <br></br>
-&nbsp;Exemplo: Quero achar a palavra 'Mochila' mas só sei que tem o ch no meio, ai faço __ch% e coloco para rodar.**)</kbd> :speech_balloon:
+&nbsp;Exemplo: Quero achar a palavra 'Mochila' mas só sei que tem o ch no meio, ai faço __ch% e coloco para rodar.**)</kbd> 
 
 
 
