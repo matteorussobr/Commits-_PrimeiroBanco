@@ -2,7 +2,7 @@
 
 
 -------------------------------------------------------------------------------------------------------------
-<h2 align="center">:information_source:Repositório para sempre que eu precisar ver coisas sobre banco de dados:information_source:
+<h2 align="center">:information_source:Repositório para sempre que eu precisar ver coisas sobre banco de dados:information_source: </h2>
 
 -------------------------------------------------------------------------------------------------------------
 
@@ -112,8 +112,7 @@ WHERE c.Name LIKE 'A%'; :speech_balloon: <kbd>(**Filtrando para trazer tudo que 
 
 SELECT * FROM world.country c
 <br></br>
-WHERE c.Name LIKE '_a%'; :speech_balloon: <kbd>(**Filtrando todos os países que tenham a segunda letra com a.<br>
-&nbsp;Pode-se usar quantos _ quiser, ele usa antes para ir pulando as letras até chegar na que precise.<br>
+WHERE c.Name LIKE '_a%'; :speech_balloon: <kbd>(**Filtrando todos os países que tenham a segunda letra com a.&nbsp;Pode-se usar quantos _ quiser, ele usa antes para ir pulando as letras até chegar na que precise.
 &nbsp;Exemplo: Quero achar a palavra 'Mochila' mas só sei que tem o ch no meio, ai faço __ch% e coloco para rodar.**)</kbd> :speech_balloon:
 
 
