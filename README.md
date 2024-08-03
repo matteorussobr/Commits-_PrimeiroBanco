@@ -1,12 +1,12 @@
-<h1 align="center">Base Banco de Dados</h1>
+<h1 align="center">Base Banco de Dados MySQL</h1>
 
 
 -------------------------------------------------------------------------------------------------------------
-## Repositório para sempre que eu precisar ver coisas sobre banco de dados
+<h2 align="center">:information_source:Repositório para sempre que eu precisar ver coisas sobre banco de dados:information_source:
 
 -------------------------------------------------------------------------------------------------------------
 
-<h2> ${\color{purple}OPERAÇÕES}$ ${\color{purple}MATEMÁTICAS:}$ </h2>
+<h2> ${\color{gray}OPERAÇÕES}$ ${\color{gray}MATEMÁTICAS:}$ </h2>
 
 SOMA +
 
@@ -21,7 +21,7 @@ RESTO DA DIVISÃO %
 --------------------------------------------------------------------------------------------------------------
 
 
-<h2>  ${\color{purple}FILTRO}$ ${\color{purple}WHERE}$ </h2>
+<h2>  ${\color{gray}FILTRO}$ ${\color{gray}WHERE}$ </h2>
 
 MAIOR >
 
@@ -34,10 +34,10 @@ DIFERENTE DE <>
 DIFERENTE DE !=
 
 ENTRE between
+<br></br>
 
---------------------------------------------------------------------------------------------------------------
 
-<h2> ${\color{purple}EXEMPLOS}$ </h2>
+<h2> ${\color{silver}EXEMPLOS}$ </h2>
 
 Países com população acima de 100.000.000 de habitantes 
 <br></br>
@@ -63,8 +63,60 @@ WHERE c.Population BETWEEN 0 AND 1000;
 <br></br>
 <br></br>
 
-Países com população entre 0 e 1000 habitantes
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------
+
+<h2> ${\color{gray}WHERE}$ ${\color{gray}com}$ ${\color{gray}texto}$ </h2>
+
+AND - Mostra um registro se ambas as condições forem verdadeiras. <br></br>
+OR - Mostra um registro se pelo menos uma das condições forem verdadeiras.<br></br>
+IN - É utilizado quando desejamos consultar uma tabela filtrando o valor de um de seus campos.<br></br>
+LIKE - Quando se deseja fazer uma busca por um caracter.<br></br>
+
+
+<h2> ${\color{silver}EXEMPLOS}$ </h2>
+
+
 
 SELECT * FROM world.country c
+<br></br>
+WHERE c.Continent = 'Asia'; :speech_balloon: <kbd>(**Filtrando para países da Asia apenas.**)</kbd> :speech_balloon:
 
-WHERE c.Population BETWEEN 0 AND 1000;
+<br></br>
+<br></br>
+
+SELECT * FROM world.country c
+<br></br>
+WHERE c.Continent IN ('Asia', 'Europe'); :speech_balloon: <kbd>(**Filtrando para países da Asia e Europa apenas.**)</kbd> :speech_balloon:
+
+<br></br>
+<br></br>
+
+SELECT * FROM world.country c
+<br></br>
+WHERE length(c.Name) <=5; :speech_balloon: <kbd>(**Filtrando para buscar todos os nomes que tenham 5 ou menos letras.**)</kbd> :speech_balloon:
+
+<br></br>
+<br></br>
+
+SELECT * FROM world.country c
+<br></br>
+WHERE c.Name LIKE 'A%'; :speech_balloon: <kbd>(**Filtrando para trazer tudo que começa com A e não importa oq venha depois, usando o LIKE pra isso.**)</kbd> :speech_balloon:
+
+<br></br>
+<br></br>
+
+SELECT * FROM world.country c
+<br></br>
+WHERE c.Name LIKE '_a%'; :speech_balloon: <kbd>(**Filtrando todos os países que tenham a segunda letra com a.<br>
+&nbsp;Pode-se usar quantos _ quiser, ele usa antes para ir pulando as letras até chegar na que precise.<br>
+&nbsp;Exemplo: Quero achar a palavra 'Mochila' mas só sei que tem o ch no meio, ai faço __ch% e coloco para rodar.**)</kbd> :speech_balloon:
+
+
+
+
+
