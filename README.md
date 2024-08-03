@@ -113,8 +113,8 @@ WHERE c.Name LIKE 'A%';  <kbd>(**Filtrando para trazer tudo que começa com A e 
 SELECT * FROM world.country c
 <br></br>
 WHERE c.Name LIKE '_a%'; <kbd>(**Filtrando todos os países que tenham a segunda letra com a.&nbsp;
-Pode-se usar quantos _ quiser, ele usa antes para ir pulando as letras até chegar na que precise. <br></br>
-&nbsp;Exemplo: Quero achar a palavra 'Mochila' mas só sei que tem o ch no meio, ai faço __ch% e coloco para rodar.**)</kbd> 
+Pode-se usar quantos _ quiser, ele usa antes para ir pulando as letras até chegar na que precise.
+Exemplo: Quero achar a palavra 'Mochila' mas só sei que tem o ch no meio, ai faço __ch% e coloco para rodar.**)</kbd> 
 
 
 
